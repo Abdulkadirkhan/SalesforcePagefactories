@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SalesForce.Com">
+    
+ 
+
+
+
+<test name="Starting Test Suite">
+    <classes>
+        <class name="Testcases.BegainingTestSuite" ></class>  
+    </classes>
+</test>
+
+<test name="Login test">
+    <classes>
+        <class name="Testcases.LoginTest" ></class>  
+    </classes>
+</test>
+
+
+<test name="Import Contact Test">
+    <classes>
+        <class name="Testcases.ImportContactTest" ></class>  
+    </classes>
+</test>
+
+
+
+<test name="Post comments">
+    <classes>
+        <class name="Testcases.ChatterTest" ></class>  
+    </classes>
+</test>
+
+<test name="Ending Test Suite">
+    <classes>
+        <class name="Testcases.EndingTestSuite" ></class>  
+    </classes>
+</test>
+
+
+
+</suite>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SalesForce.Com]">
+  <test name="Import Contact Test(failed)">
+    <classes>
+      <class name="Testcases.LoginTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- Testcases.LoginTest -->
+      <class name="Testcases.ImportContactTest">
+        <methods>
+          <include name="ImportContactTest"/>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- Testcases.ImportContactTest -->
+      <class name="Testcases.BegainingTestSuite">
+        <methods>
+          <include name="loadReports"/>
+        </methods>
+      </class> <!-- Testcases.BegainingTestSuite -->
+      <class name="Testcases.EndingTestSuite">
+        <methods>
+          <include name="finaltest"/>
+        </methods>
+      </class> <!-- Testcases.EndingTestSuite -->
+      <class name="Testcases.ChatterTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- Testcases.ChatterTest -->
+    </classes>
+  </test> <!-- Import Contact Test(failed) -->
+  <test name="Post comments(failed)">
+    <classes>
+      <class name="Testcases.LoginTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- Testcases.LoginTest -->
+      <class name="Testcases.ImportContactTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- Testcases.ImportContactTest -->
+      <class name="Testcases.BegainingTestSuite">
+        <methods>
+          <include name="loadReports"/>
+        </methods>
+      </class> <!-- Testcases.BegainingTestSuite -->
+      <class name="Testcases.EndingTestSuite">
+        <methods>
+          <include name="finaltest"/>
+        </methods>
+      </class> <!-- Testcases.EndingTestSuite -->
+      <class name="Testcases.ChatterTest">
+        <methods>
+          <include name="isSkip"/>
+          <include name="chattertest"/>
+        </methods>
+      </class> <!-- Testcases.ChatterTest -->
+    </classes>
+  </test> <!-- Post comments(failed) -->
+</suite> <!-- Failed suite [SalesForce.Com] -->
