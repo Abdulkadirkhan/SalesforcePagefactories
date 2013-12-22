@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" total="3" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="SalesForce.Com" duration-ms="18216" started-at="2013-12-21T19:57:13Z" finished-at="2013-12-21T19:57:31Z">
+  <suite name="SalesForce.Com" duration-ms="58919" started-at="2013-12-22T18:07:02Z" finished-at="2013-12-22T18:08:01Z">
     <groups>
     </groups>
-    <test name="Starting Test Suite" duration-ms="6" started-at="2013-12-21T19:57:13Z" finished-at="2013-12-21T19:57:13Z">
+    <test name="Starting Test Suite" duration-ms="6" started-at="2013-12-22T18:07:02Z" finished-at="2013-12-22T18:07:02Z">
     </test> <!-- Starting Test Suite -->
-    <test name="Login test" duration-ms="18154" started-at="2013-12-21T19:57:13Z" finished-at="2013-12-21T19:57:31Z">
+    <test name="Login test" duration-ms="34378" started-at="2013-12-22T18:07:02Z" finished-at="2013-12-22T18:07:37Z">
       <class name="Testcases.LoginTest">
-        <test-method status="PASS" signature="isSkip()[pri:0, instance:Testcases.LoginTest@72b6212c]" name="isSkip" is-config="true" duration-ms="12383" started-at="2013-12-22T01:27:13Z" finished-at="2013-12-22T01:27:25Z">
+        <test-method status="PASS" signature="isSkip()[pri:0, instance:Testcases.LoginTest@4a17babb]" name="isSkip" is-config="true" duration-ms="20218" started-at="2013-12-22T23:37:02Z" finished-at="2013-12-22T23:37:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkip -->
-        <test-method status="PASS" signature="dologin(java.util.Hashtable)[pri:0, instance:Testcases.LoginTest@72b6212c]" name="dologin" duration-ms="5763" started-at="2013-12-22T01:27:25Z" data-provider="getData" finished-at="2013-12-22T01:27:31Z">
+        <test-method status="PASS" signature="dologin(java.util.Hashtable)[pri:0, instance:Testcases.LoginTest@4a17babb]" name="dologin" duration-ms="14140" started-at="2013-12-22T23:37:23Z" data-provider="getData" finished-at="2013-12-22T23:37:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Username=abdul.khan620@gmail.com, Password=selenium1234, runmode=Y, title=google.com}]]>
+                <![CDATA[{Username=abdul.khan620@gmail.com, TestName=LoginTest, serial=1.0, Password=selenium1234, runmode=Y, title=google.com}]]>
               </value>
             </param>
           </params>
@@ -26,49 +26,17 @@
         </test-method> <!-- dologin -->
       </class> <!-- Testcases.LoginTest -->
     </test> <!-- Login test -->
-    <test name="Import Contact Test" duration-ms="6" started-at="2013-12-21T19:57:31Z" finished-at="2013-12-21T19:57:31Z">
+    <test name="Import Contact Test" duration-ms="14487" started-at="2013-12-22T18:07:37Z" finished-at="2013-12-22T18:07:51Z">
       <class name="Testcases.ImportContactTest">
-        <test-method status="SKIP" signature="isSkip()[pri:0, instance:Testcases.ImportContactTest@45b12c9b]" name="isSkip" is-config="true" duration-ms="0" started-at="2013-12-22T01:27:31Z" finished-at="2013-12-22T01:27:31Z">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test case as the Run mode is not Y]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test case as the Run mode is not Y
-	at Testcases.ImportContactTest.isSkip(ImportContactTest.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        <test-method status="PASS" signature="isSkip()[pri:0, instance:Testcases.ImportContactTest@6b249338]" name="isSkip" is-config="true" duration-ms="1" started-at="2013-12-22T23:37:37Z" finished-at="2013-12-22T23:37:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkip -->
-        <test-method status="SKIP" signature="ImportContactTest(java.util.Hashtable)[pri:0, instance:Testcases.ImportContactTest@45b12c9b]" name="ImportContactTest" duration-ms="0" started-at="2013-12-22T01:27:31Z" data-provider="getData" finished-at="2013-12-22T01:27:31Z">
+        <test-method status="PASS" signature="ImportContactTest(java.util.Hashtable)[pri:0, instance:Testcases.ImportContactTest@6b249338]" name="ImportContactTest" duration-ms="14481" started-at="2013-12-22T23:37:37Z" data-provider="getData" finished-at="2013-12-22T23:37:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{runmode=Y}]]>
+                <![CDATA[{TestName=ImportContactTest, serial=2.0, runmode=Y}]]>
               </value>
             </param>
           </params>
@@ -77,49 +45,17 @@
         </test-method> <!-- ImportContactTest -->
       </class> <!-- Testcases.ImportContactTest -->
     </test> <!-- Import Contact Test -->
-    <test name="Post comments" duration-ms="8" started-at="2013-12-21T19:57:31Z" finished-at="2013-12-21T19:57:31Z">
+    <test name="Post comments" duration-ms="9999" started-at="2013-12-22T18:07:51Z" finished-at="2013-12-22T18:08:01Z">
       <class name="Testcases.ChatterTest">
-        <test-method status="SKIP" signature="isSkip()[pri:0, instance:Testcases.ChatterTest@852732d]" name="isSkip" is-config="true" duration-ms="0" started-at="2013-12-22T01:27:31Z" finished-at="2013-12-22T01:27:31Z">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test case as the Run mode is not Y]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test case as the Run mode is not Y
-	at Testcases.ChatterTest.isSkip(ChatterTest.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        <test-method status="PASS" signature="isSkip()[pri:0, instance:Testcases.ChatterTest@614b5446]" name="isSkip" is-config="true" duration-ms="1" started-at="2013-12-22T23:37:51Z" finished-at="2013-12-22T23:37:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkip -->
-        <test-method status="SKIP" signature="chattertest(java.util.Hashtable)[pri:0, instance:Testcases.ChatterTest@852732d]" name="chattertest" duration-ms="2" started-at="2013-12-22T01:27:31Z" data-provider="getData" finished-at="2013-12-22T01:27:31Z">
+        <test-method status="PASS" signature="chattertest(java.util.Hashtable)[pri:0, instance:Testcases.ChatterTest@614b5446]" name="chattertest" duration-ms="9992" started-at="2013-12-22T23:37:51Z" data-provider="getData" finished-at="2013-12-22T23:38:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Share=Share Comment, runmode=Y, Comment=Another comments}]]>
+                <![CDATA[{Share=Share Comment, TestName=ChatterTest, serial=3.0, runmode=Y, Comment=Another comments}]]>
               </value>
             </param>
           </params>
@@ -128,15 +64,15 @@
         </test-method> <!-- chattertest -->
       </class> <!-- Testcases.ChatterTest -->
     </test> <!-- Post comments -->
-    <test name="Ending Test Suite" duration-ms="0" started-at="2013-12-21T19:57:31Z" finished-at="2013-12-21T19:57:31Z">
+    <test name="Ending Test Suite" duration-ms="0" started-at="2013-12-22T18:08:01Z" finished-at="2013-12-22T18:08:01Z">
       <class name="Testcases.BegainingTestSuite">
-        <test-method status="PASS" signature="loadReports()[pri:0, instance:Testcases.BegainingTestSuite@72d3f17d]" name="loadReports" is-config="true" duration-ms="978" started-at="2013-12-22T01:27:12Z" finished-at="2013-12-22T01:27:13Z">
+        <test-method status="PASS" signature="loadReports()[pri:0, instance:Testcases.BegainingTestSuite@3f2a225b]" name="loadReports" is-config="true" duration-ms="1250" started-at="2013-12-22T23:37:01Z" finished-at="2013-12-22T23:37:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadReports -->
       </class> <!-- Testcases.BegainingTestSuite -->
       <class name="Testcases.EndingTestSuite">
-        <test-method status="PASS" signature="finaltest()[pri:0, instance:Testcases.EndingTestSuite@216f1cbc]" name="finaltest" is-config="true" duration-ms="6798" started-at="2013-12-22T01:27:31Z" finished-at="2013-12-22T01:27:38Z">
+        <test-method status="PASS" signature="finaltest()[pri:0, instance:Testcases.EndingTestSuite@5dd72c40]" name="finaltest" is-config="true" duration-ms="3150" started-at="2013-12-22T23:38:01Z" finished-at="2013-12-22T23:38:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finaltest -->

@@ -24,6 +24,7 @@ public class LoginPage extends Page {
 		username.sendKeys(Username);
 		password.sendKeys(Password);
 		signin.click();
+		app_logs.debug("User Successfully logged in:");
 		
 		return PageFactory.initElements(driver, LandingPage.class);
 	}

@@ -170,9 +170,6 @@ public class TestUtil extends Page{
 		public static String now(String dateFormat) {
 		    Calendar cal = Calendar.getInstance();
 		    SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
-		    //System.out.println("this is the localhost ip"+Handeler());
-		    //System.out.println("this is the localhost newip"+localhost_IP);
-		//  System.out.println("Bhai ye hi hai apna IP"+TestConfig.attachmentName);
 		  
 		    return sdf.format(cal.getTime());
 		    

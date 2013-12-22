@@ -1,5 +1,6 @@
 package Testcases;
 
+import java.util.Date;
 import java.util.Hashtable;
 
 import org.openqa.selenium.support.PageFactory;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 import Core.Page;
 import Pages.LandingPage;
 import Pages.LoginPage;
+import Util.HTMLReport;
 import Util.TestUtil;
 
 public class ImportContactTest {
@@ -29,8 +31,13 @@ public class ImportContactTest {
 	@Test(dataProvider="getData")
 	public void ImportContactTest(Hashtable<String,String> data)
 	{
+		String startTime = TestUtil.now("hh:mm:ss").toString();
+		
 		LandingPage lp = Page.topmenu.gotohome();
 		lp.importcontact();
+		
+		String endTime = TestUtil.now("hh:mm:ss").toString();
+		HTMLReport.LogResult(data.get("serial"),data.get("TestName"),"Pass", startTime, endTime);
 	}
 	
 	@DataProvider
