@@ -1,21 +1,27 @@
 package Util;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
-import org.testng.SkipException;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 import Core.Page;
-import Util.TestUtil;
 
 public class HTMLReport extends Page {
 
-	public static String testStartTime = TestUtil.now("hh:mm:ss").toString();
-	public static String RUN_DATE = TestUtil.now("dd.MMMMM.yyyy").toString();
+	public static String testStartTime = now("hh:mm:ss").toString();
+	public static String RUN_DATE = now("dd.MMMMM.yyyy").toString();
 	public static String sTestname;
 	public static String filename = System.getProperty("user.dir")+"\\target\\Reports.html";
-	
+    public static String mailscreenshotpath;
 	public static void HTMLReports() {
 		
 			
@@ -164,14 +170,10 @@ public class HTMLReport extends Page {
  			{
  				
 			  	 out.write("<td width=15% align= center  bgcolor=Red><FONT COLOR=#153E7E FACE= Arial  SIZE=2><b>"+"Fail"+"</b></td>\n");
-			  	 TestUtil.captureScreenshot();
-			  	if(TestUtil.mailscreenshotpath != null){
-			  		String sspath = TestUtil.mailscreenshotpath;
+			  	 captureScreenshot();
+			  	if(mailscreenshotpath != null){
+			  		String sspath = mailscreenshotpath;
 
-			  		String concatenated_String=sspath;
-                    String split_string_array[]=concatenated_String.split(":");
-                   // String path = System.getProperty("user.dir")+"+";
-			  		//System.out.println(split_string_array[1]);
 		 			 out.write("<td align=center width=15%><FONT COLOR=#153E7E FACE=Arial SIZE=1><b><a href="+sspath+" target=_blank>Screen Shot</a></b></td>");
 		 			out.write("</tr>");
 		 			out.write("</table>\n");
@@ -192,7 +194,42 @@ public class HTMLReport extends Page {
 	
 	//------------------------------------------------------------------------------------
 	
+	public static void captureScreenshot() {
+		
+		 Calendar cal = new GregorianCalendar();
+		  int month = cal.get(Calendar.MONTH); //4
+		  int year = cal.get(Calendar.YEAR); //2013
+		  int sec =cal.get(Calendar.SECOND);
+		  int min =cal.get(Calendar.MINUTE);
+		  int date = cal.get(Calendar.DATE);
+		  int day =cal.get(Calendar.HOUR_OF_DAY);
+		
+		
 	
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	    try {
+	    	mailscreenshotpath = System.getProperty("user.dir")+"\\screenshots\\"+year+"_"+date+"_"+(month+1)+"_"+day+"_"+min+"_" +sec+".jpeg";
+			FileUtils.copyFile(scrFile, new File(mailscreenshotpath));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	   
+	}
+	
+	
+	//------------------------------------------------------------------------
+	
+	// returns current date and time
+	public static String now(String dateFormat) {
+	    Calendar cal = Calendar.getInstance();
+	    SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
+	    //System.out.println("this is the localhost ip"+Handeler());
+	    //System.out.println("this is the localhost newip"+localhost_IP);
+	//  System.out.println("Bhai ye hi hai apna IP"+TestConfig.attachmentName);
+	  
+	    return sdf.format(cal.getTime());
+	    
+	}
 	
 	public static void LogResult(String Step, String TestName, String Status, String startTime, String endTime)
 		{
@@ -239,7 +276,7 @@ public class HTMLReport extends Page {
 			FileWriter fstream =null;
 			BufferedWriter out =null;
 			
-			String ENDTIME = TestUtil.now("hh:mm:ss").toString();
+			String ENDTIME = now("hh:mm:ss").toString();
 			
 			    try
 				{
