@@ -128,10 +128,12 @@ public class TestUtil extends Page{
 		    try {
 		    	mailscreenshotpath = System.getProperty("user.dir")+"\\screenshots\\"+year+"_"+date+"_"+(month+1)+"_"+day+"_"+min+"_" +sec+".jpeg";
 				FileUtils.copyFile(scrFile, new File(mailscreenshotpath));
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}	   
+			}
+		    
 		}
 		
 		// make zip of reports
@@ -174,5 +176,10 @@ public class TestUtil extends Page{
 		    return sdf.format(cal.getTime());
 		    
 		}
+		
+		
          
 }
+
+
+

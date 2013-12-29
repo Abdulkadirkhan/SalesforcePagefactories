@@ -117,6 +117,8 @@ public static String filename;
 		
 	}
 	
+	
+	
 	public static void LogResult(String Step, String TestName, String Status, String StartTime, String EndTime)
 	{
 		
@@ -130,7 +132,8 @@ public static String filename;
 	    out.write("<table  border=1 cellspacing=1 cellpadding=1 width=100%>\n");
 	    out.write("<tr>\n");
         out.write("<td align=center width=10%  align=center ><FONT COLOR=#153E7E FACE=Arial SIZE=2><b>"+Step+"</b></td>");
-        out.write("<td align=center width=40% align=center ><FONT COLOR=#153E7E FACE=Arial SIZE=2><b>"+TestName+"</b></td>");
+       // out.write("<td align=center width=40% align=center ><FONT COLOR=#153E7E FACE=Arial SIZE=2><b>"+TestName+"</b></td>");
+        out.write("<td align=center width=40% align=center ><FONT COLOR=#153E7E FACE=Arial SIZE=2><b><a href="+TestName+" target="+"_blank"+">"+TestName+"</a></td>");
         out.write("<td align=center width=10% align=center ><FONT COLOR=#153E7E FACE=Arial SIZE=2><b>"+Status+"</b></td>");
         out.write("<td align=center width=20% align=center ><FONT COLOR=#153E7E FACE=Arial SIZE=2><b>"+StartTime+"</b></td>");
  		out.write("<td align=center width=20% align=center ><FONT COLOR=#153E7E FACE=Arial SIZE=2><b>"+EndTime+"</b></td>");

@@ -2,6 +2,10 @@ package Core;
 
 public class Constants {
 	
+	//Report Files
+	public static String LoginTest = System.getProperty("user.dir")+"\\target\\LoginTest.html";
+	
+	
 	//Config Properties
 	
 	public static final String browser = "firefox";
@@ -10,7 +14,7 @@ public class Constants {
 	//Object Repository
 	
 	//LoginPage
-	public static final String username = "//*[@id='username']";
+	public static final String username = "//*[@id='usernam']";
 	public static final String password = "//*[@id='password']";
 	public static final String login = "//*[@id='Login']";
 	

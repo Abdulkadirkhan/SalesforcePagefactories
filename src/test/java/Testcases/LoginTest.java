@@ -38,12 +38,27 @@ public class LoginTest {
 	{
 		String startTime = TestUtil.now("hh:mm:ss").toString();
 		
+		
+		
 		LoginPage page = PageFactory.initElements(Page.driver, LoginPage.class);
 		page.dologin(data.get("Username"), data.get("Password"));
+		//ErrorCollector.verifyEquals(page.ValidateTitle(), data.get("title"));
 		ErrorCollector.verifyEquals(page.ValidateTitle(), data.get("title"));
+		if (page.ValidateTitle() == data.get("title"))
+		{
+			
+			String endTime = TestUtil.now("hh:mm:ss").toString();
+			HTMLReport.LogResult(data.get("serial"),data.get("TestName"),"Pass", startTime, endTime);
+			
+		}
 		
-		String endTime = TestUtil.now("hh:mm:ss").toString();
-		HTMLReport.LogResult(data.get("serial"),data.get("TestName"),"Pass", startTime, endTime);
+		else 
+		{
+			String endTime = TestUtil.now("hh:mm:ss").toString();
+			HTMLReport.LogResult(data.get("serial"),data.get("TestName"),"Fail", startTime, endTime);
+			
+		}
+	
 	}
 	
 	@DataProvider

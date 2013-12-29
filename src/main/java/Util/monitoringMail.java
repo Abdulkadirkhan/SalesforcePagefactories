@@ -94,8 +94,10 @@ public class monitoringMail extends Page
 	    public PasswordAuthentication getPasswordAuthentication()
 	    {
 
+	       // String username = TestConfig.from;
 	        String username = TestConfig.from;
 	        String password = TestConfig.password;
+	        //String password = TestConfig.password;
 	        
 	        return new PasswordAuthentication(username, password);
 	    }

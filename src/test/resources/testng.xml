@@ -2,6 +2,9 @@
 <suite name="SalesForce.Com">
     
  
+  <listeners>
+    <listener class-name="ErrorCollectors.TestListenerAdapter" />
+</listeners>
 
 
 

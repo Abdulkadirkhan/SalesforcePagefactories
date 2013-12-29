@@ -1,11 +1,5 @@
 package Core;
 
-
-import Util.HTMLReport;
-import Util.monitoringMail;
-
-import java.io.FileInputStream;
-
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -16,12 +10,15 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import Pages.TopNavigation;
+import Util.HTMLReport;
 import Util.Xls_Reader;
+import Util.monitoringMail;
 
 public class Page {
 	
 	public static WebDriver driver;
 	public static String filename = System.getProperty("user.dir")+"\\target\\Reports.html";
+	
 	public static Xls_Reader excel = new Xls_Reader(System.getProperty("user.dir")+"\\src\\main\\resources\\testdata.xlsx");;
 	public static TopNavigation topmenu = null;
 	public static monitoringMail mail = null;

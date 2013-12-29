@@ -54,6 +54,10 @@ public class ErrorCollector {
     	Assert.assertEquals(actual, expected);
     }
     
+    public static void assertEquals(String actual, String expected) {
+    	Assert.assertEquals(actual, expected);
+    }
+    
     public static void assertEquals(Object actual, Object expected) {
     	Assert.assertEquals(actual, expected);
     }
@@ -110,7 +114,7 @@ public class ErrorCollector {
     	try {
     		assertEquals(actual, expected);
 		} catch(Throwable e) {
-    		TestUtil.captureScreenshot();
+    		//TestUtil.captureScreenshot();
 			addVerificationFailure(e);
     		
 		}
