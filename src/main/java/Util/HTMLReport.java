@@ -15,7 +15,7 @@ public class HTMLReport {
 	public static String RUN_DATE = TestUtil.now("dd.MMMMM.yyyy").toString();
 	public static String sTestname;
 	
-	
+	//HTML Report
 	public static void HTMLReports() {
 		
 			
