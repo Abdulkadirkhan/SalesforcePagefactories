@@ -4,7 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.util.Date;
 
-import org.testng.SkipException;
+//import org.testng.SkipException;
 
 import Core.Page;
 import Util.TestUtil;
